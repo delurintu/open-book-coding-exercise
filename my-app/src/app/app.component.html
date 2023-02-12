@@ -2,5 +2,15 @@
 
   <input type="text" [formControl]="expression">
 
-  <button type="button" (click)="validateExp()"> Validate</button>
+  <button type="button" (click)="evaluateExp()"> Evaluate</button>
+
+  <br>
+  <br>
+  <span> Last expressions evaluated:</span>
+  <ul>
+    <li *ngFor="let item of resultArray | slice: (resultArray.length > 5 ? resultArray.length - 5 : 0); index as i">
+    {{ item}}
+    </li>
+  </ul>
+
 

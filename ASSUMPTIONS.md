@@ -10,3 +10,9 @@ Task B.
 - for now this works for common operators
 
 // TODO, extend funtionality for advandes operators (sin,cos and tan)
+
+
+Task C.
+
+ - after some reseach, i discovered that is a better way to evaluate an expression, Shunting Yard Algorithm, so i used it.
+ - still some issues with the sin, cos and tan operators.
