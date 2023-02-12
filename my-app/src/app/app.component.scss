@@ -1,0 +1,18 @@
+.container{
+    max-width: 300px;
+    margin: 50px;
+    float: left;
+    .expression-container{
+        margin-bottom: 15px;
+    }
+
+    .expression-text{
+        margin: 15px;
+    }
+
+    .last-expressions{
+        min-height: 200px;
+        height: 100%;
+    }
+}
+

@@ -1,16 +1,24 @@
+<div class="container">
 <h3> Validate expression</h3>
 
-  <input type="text" [formControl]="expression">
+<div class="expression-container">
+  <input type="text" (onkeyup)="evaluateExp()" [formControl]="expression">
+  <button type="button" (click)="evaluateExp()" > Evaluate</button>
+</div>
 
-  <button type="button" (click)="evaluateExp()"> Evaluate</button>
+  <span class="expression-text" *ngIf="expression?.value"> Expression {{ expression.value }} is {{ expression.valid? 'Valid' : 'Not valid'}}</span>
 
-  <br>
-  <br>
-  <span> Last expressions evaluated:</span>
+  <div class="last-expressions">
+  <span class="expression-text"> Last expressions evaluated:</span>
   <ul>
     <li *ngFor="let item of resultArray | slice: (resultArray.length > 5 ? resultArray.length - 5 : 0); index as i">
     {{ item}}
     </li>
   </ul>
 
+</div>
 
+<h3> Calculator</h3>
+
+<app-calculator></app-calculator>
+</div>

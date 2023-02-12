@@ -1,0 +1,118 @@
+:host {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    overflow: hidden;
+}
+
+.container {
+    min-width: 375px;
+    max-width: 375px;
+    min-height: 667px;
+    max-height: 667px;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    padding: 0px 16.5px 16px 16px;
+    cursor: default;
+    button {
+        outline: unset;
+    }
+}
+
+.top-container {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    .calc-display {
+        flex: 1;
+        height: 50px;
+        font-size: 95px;
+        font-weight: 50;
+        margin: 0px -2.5px 25px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: white;
+        letter-spacing: -4.5px;
+    }
+}
+
+.bottom-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.right-operator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .right-operator:active {
+        transition: unset;
+        background: #f5f5f5;
+    }
+    .right-operator {
+        margin: 14px 0px 0px 0px;
+        padding: 0px;
+        width: 75px;
+        height: 75px;
+        font-size: 44px;
+        border: none;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        padding-bottom: 6px;
+        padding-right: 1.5px;
+    }
+
+}
+
+.number-container {
+    .number:active {
+        transition: unset;
+        background: #737373;
+    }
+    .number {
+        margin: 14px 12px 0px 0px;
+        padding: 0px;
+        width: 75px;
+        height: 75px;
+        font-size: 36px;
+        border: none;
+        background: #333333;
+        color: white;
+        padding-right: 1.5px;
+    }
+    .zero {
+        
+        width: 75px;
+        height: 75px;
+        padding-left: 26px;
+        text-align: left;
+    }
+}
+
+.symbol-container {
+    .symbol:active {
+        transition: unset;
+        background: #d9d9d9;
+    }
+    .symbol {
+        margin: 14px 12px 0px 0px;
+        padding: 0px;
+        width: 250px;
+        height: 75px;
+        font-size: 36px;
+        border: none;
+        background: #a6a6a6;
+        color: black;
+        padding-right: 1.5px;
+    }
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+}
